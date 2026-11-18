@@ -1,0 +1,30 @@
+공영주차장 감시대응 솔루션
+Copyright (c) 2026 Jinwoo Soft Innovation Co., Ltd.
+
+이 소프트웨어는 MIT 라이선스로 배포합니다(LICENSE 참고).
+아래 오픈소스를 수정하지 않고 라이브러리로 사용합니다. 전체 목록과 버전은
+오픈소스 사용내역(docs/09_오픈소스사용내역_SBOM.pdf)에 있습니다.
+
+약한 카피레프트 라이선스 의존성
+  MariaDB Connector/J 3.5.8          LGPL-2.1-or-later
+  Logback 1.5.34                     EPL-2.0 또는 LGPL-2.1
+  Jakarta Annotations API 2.1.1      EPL-2.0 또는 GPL-2.0 (Classpath Exception)
+
+주요 의존성 (허용형 라이선스)
+  Spring Boot 3.5.16, Spring Framework 6.2.19, Spring Security 6.5.11,
+  MyBatis 3.5.19, Thymeleaf 3.1.5, Flyway 11.7.2, Apache Tomcat 10.1.55,
+  Jackson 2.21.4, HikariCP 6.3.3, Hibernate Validator 8.0.3
+                                     Apache-2.0
+  spring-dotenv 4.0.0, SLF4J 2.0.18  MIT
+  PostgreSQL JDBC Driver 42.7.11     BSD-2-Clause
+  Lombok (빌드 시에만 사용)            MIT
+
+화면에 포함된 라이브러리와 글꼴 (src/main/resources/static/vendor, 라이선스 전문 함께 포함)
+  Leaflet 1.9.4                      BSD-2-Clause
+  Lucide 1.49.0                      ISC
+  Pretendard                         SIL Open Font License 1.1
+  Tailwind CSS 4 (빌드 시에만 사용)     MIT
+
+배포에 쓰는 컨테이너 이미지 (각 이미지의 라이선스를 따름)
+  eclipse-temurin:17-jre (OpenJDK)   GPL-2.0 (Classpath Exception)
+  mariadb:11.2                       GPL-2.0, 별도 프로세스로 실행
